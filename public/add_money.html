@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar section starts -->
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">FREE PAY</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#transferid">Transfer</a></li>
+          <li><a href="#">Transactions</a></li>
+          <li><a href="#contactid">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar section ends -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <div class="container" id="contactid">
+      <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 main">
+          <form action="/sign_up" method="post">
+            <h1>Add Money to Your Wallet</h1>
+
+            <input
+              class="box"
+              type="number"
+              name="card_number"
+              id="card_number"
+              placeholder="Enter Card Number"
+              required
+            /><br />
+
+            <input
+              class="box"
+              type="number"
+              name="balance"
+              id="balance"
+              placeholder="Amount to be Send "
+              required
+            /><br />
+
+            <input
+              class="box"
+              type="text"
+              name="card_holder_name"
+              id="card_holder_name"
+              placeholder="Card Holder Name"
+              required
+            /><br />
+
+            <input
+              class="box"
+              type="text"
+              name="expiry_date"
+              id="expiry_date"
+              placeholder="Expiry Date"
+              required
+            /><br />
+
+            <input
+              class="box"
+              type="number"
+              name="cvv"
+              id="cvv"
+              placeholder="CVV"
+              required
+            /><br />
+
+            <br />
+            <input
+              type="submit"
+              id="submitDetails"
+              name="submitDetails"
+              value="Send"
+            /><br />
+          </form>
+        </div>
+
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </body>
+</html>

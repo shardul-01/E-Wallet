@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Trsnsfer Page</title>
+  </head>
+  <body>
+    <!-- navbar section starts -->
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">FREE PAY</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#transferid">Transfer</a></li>
+          <li><a href="#">Transactions</a></li>
+          <li><a href="#contactid">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar section ends -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- "Transfer Money" Heading Start -->
+    <div
+      class="transferMoneyText"
+      style="
+        background-image: linear-gradient(-45deg, #49d0da 0%, #210c592f 50%);
+      "
+    >
+      <h1 style="text-align: center">Transfer Money</h1>
+    </div>
+    <!-- "Transfer Money" Heading Ends -->
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- Money Transfer Form Starts -->
+    <div class="container" id="contactid" style="padding: 5%">
+      <form action="/sign_up" method="post">
+        <!-- wallet ID starts -->
+        <div class="form-group">
+          <label for="exampleInputEmail1">Wallet ID</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="Enter Wallet ID (e.g. walXXXX)"
+            name="walletID"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Enter Reciever's Wallet ID</small
+          >
+        </div>
+        <!-- wallet ID ends -->
+
+        <!-- amount section starts -->
+        <div class="form-group">
+          <label for="exampleInputPassword1">Amount</label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Enter Amount to be Sned"
+            name="amount"
+            required
+          />
+        </div>
+        <!-- amount section ends -->
+
+        <!-- password section starts -->
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <!-- password sectin ends -->
+
+        <input
+          type="submit"
+          id="submitDetails"
+          name="submitDetails"
+          class="registerbtn"
+          value="Send"
+        />
+        <br />
+
+        <!-- <button
+          type="submit"
+          id="submitDetails"
+          name="submitDetails"
+          value="Submit"
+          class="btn btn-success btn-block"
+        >
+          Send
+        </button> -->
+      </form>
+    </div>
+    <!-- Money Transfer Form Ends -->
+  </body>
+</html>
